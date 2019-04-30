@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Mine Sweeper</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()" >
+    <header class="header-container">
+        <div class="header">
+            <h1>Mine Sweeper</h1>
+            <div class="levels-container"></div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="container-smiley-time">
+            <div class="smiley"><button class="smiley-btn" onclick="init()"></button></div>
+            <div class="timer"><p></p></div>
+        </div>
+        <table oncontextmenu="return false" class="game-board">
+                <tbody class="tiles"></tbody>
+            </table>
+        <div class="hints-container"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

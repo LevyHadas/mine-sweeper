@@ -1,0 +1,211 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('imgs/background.jpg');
+    margin: 0;
+}
+
+
+.main-container {
+    margin: 40px auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(249, 249, 249, 0.5);
+    padding: 20px 20px 30px 20px;
+    border: 2px solid rgba(184, 136, 173, 0.2);
+    border-radius: 10px;
+}
+
+.header-container {
+    text-align: center;
+    height: 70px;
+    background-color: rgba(252, 252, 252, 0.8);
+}
+.header {
+    color: #906081;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+table {
+    height: 300px;
+    width: 300px;
+    border-collapse: collapse;
+}
+
+.container-smiley-time{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timer {
+    display: inline-block;
+    font-weight: 600;
+    width: 90px;
+    margin-left: 10px;
+}
+
+.timer p {
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #7e4c6f;
+    margin: 0;
+   
+    
+}
+
+
+
+.smiley-btn{
+    background: none;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+.smiley-btn img{
+    height: 50px;
+    width: 50px;;
+    border: 2px solid transparent;
+}
+
+.smiley-btn:focus {
+    outline:0;
+}
+.smiley-btn img:active, .smiley-btn img:active {
+    border-radius: 50%;
+    height: 50px;
+    border: 2px solid white;
+
+}
+
+.levels-container {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+
+
+.btn {
+    text-align: center;
+    cursor: pointer;
+    color: #7b7b7b;
+    border-radius: 7px;
+    font-size: 15Px;
+    padding: 3px 3px 3px 3px;
+    background-color: #cfe6d9;
+    padding: 5px;
+    height: 40px;
+    width: 90px;
+    font-size: 1.1rem;
+
+}
+
+td {
+    height: 25px;
+    width: 25px;
+    background-color: #d4d4d4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px dotted #f9f9f9;
+    border-radius: 10%;
+    
+}
+
+.cell.cover p {
+    display: none;
+    border: 3px solid #e3e3e3;
+}
+.cell.marked p {
+    display: none;
+}
+
+.cell p {
+    text-align: center;
+    font-size: 18 ;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+
+.hints-container{
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.hint.active {
+    background-color: #5bd0c7;
+    color: rgb(38, 44, 44)
+    
+}
+
+.hint.disabled {
+    background-color: #d6b7cb;
+    color: #7b7b7b;
+    border: none;
+}
+
+
+.wrong-mark {
+    background-image: url('imgs/wrong.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: none; 
+}
+
+.wrong-mark p {
+    display: none;
+}
+
+.cell.red-mine 
+{
+    background-color: #be1e63b5;
+    background-image: url('imgs/mine-red.png');
+}
+
+.mine {
+    background-image: url('imgs/mine.png');
+}
+.cell.cover {
+    background-image: url('imgs/tile.png');
+}
+
+.cell.marked {
+    background-image: url('imgs/flag.png');
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .levels-container {
+        justify-content: space-around;
+        width: 90vw;
+        position: fixed;
+        bottom: 30px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
