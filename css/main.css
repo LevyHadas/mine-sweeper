@@ -202,6 +202,12 @@ td {
         bottom: 30px;
         margin: 0 auto;
     }
+    .header-container {
+        background-color: transparent;
+    }
+    body {
+        height: -webkit-fill-available;
+    }
 }
 
 
